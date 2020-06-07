@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = buildPassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -81,9 +81,9 @@ var passwordArray = [];
 confirm("If your password is 12345, you need a new one.");
 
 //Prompt user to select length and specify character type
-
+var passwordLength;
 function setLength() {
-  var passwordLength = prompt(
+  passwordLength = prompt(
     "How long should your password be? Please enter a number between 8-128."
   );
   var requestedPasswordLength = isNaN(passwordLength);
@@ -99,7 +99,7 @@ function setLength() {
 }
 setLength();
 
-//Input selection and concat 
+//Input selection and concat
 
 var lowers = confirm("Would you like to use lower case letters?");
 var uppers = confirm("Would you like to use upper case letters?");
@@ -125,12 +125,15 @@ if (symbols) {
 console.log(masterPass);
 
 //Password arrays assemble!
-function buildPassword(masterPass) {
-  for (i = 0; i < passwordLength.length - 1; i++) {
-    Math.floor(Math.random() * masterPass)
-  } 
-  
+function buildPassword() {
+  var finishPass = [];
+  for (let i = 0; i < passwordLength; i++) {
+    var passwordChar =
+      masterPass[Math.floor(Math.random() * masterPass.length)];
+    finishPass.push(passwordChar);
+  }
+
+  console.log(finishPass.join(""));
+  return finishPass.join("");
 }
-
-
-
+//var result = buildPassword();
