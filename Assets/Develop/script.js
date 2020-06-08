@@ -73,6 +73,7 @@ var upperArray = [
 var numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbolArray = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "?"];
 var passwordArray = [];
+var passwordLength;
 
 //Password generator!!
 
@@ -81,7 +82,7 @@ var passwordArray = [];
 confirm("If your password is 12345, you need a new one.");
 
 //Prompt user to select length and specify character type
-var passwordLength;
+
 function setLength() {
   passwordLength = prompt(
     "How long should your password be? Please enter a number between 8-128."
@@ -90,12 +91,14 @@ function setLength() {
 
   if (requestedPasswordLength === true) {
     prompt("Please enter a number between 8-128");
-  } else if (requestedPasswordLength < 8 || requestPasswordLength > 128) {
-    prompt("Please enter a number between 8-128");
-  } else {
-    console.log(requestedPasswordLength);
-    return requestedPasswordLength;
+    setLength();
   }
+  if (passwordLength < 8 || passwordLength > 128) {
+    prompt("Please enter a number between 8-128");
+    setLength();
+  }
+  console.log(requestedPasswordLength);
+  return requestedPasswordLength;
 }
 setLength();
 
