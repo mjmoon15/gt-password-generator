@@ -28,9 +28,11 @@ Pull the repo from GitHub and initialize the index.html file.
 
 Upon first visiting the page or following a reload, the user will be asked if their password is 12345. They will subsequently be prompted to create a new password between 8-128 characters. The user can choose to use any combination of lower and upper case letters, numbers, and symbols. After responding to all prompts, the user will click the Generate Password button to create a new password with their selected criteria. The password will then be displayed in a text box. 
 
-![Initial Prompt]
 
-[logo]: Assets/Screen Shot 2020-06-08 at 4.52.12 PM.png "Logo Title Text 2"
+
+Screenshots: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 
 
 ## MIT License
