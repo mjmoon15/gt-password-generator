@@ -23,16 +23,39 @@ This web application uses Javascript API's to create a randomized password based
 
 Pull the repo from GitHub and initialize the index.html file.
 
+The page can also be accessed directly at 
+
+[Password Generator!](https://mjmoon15.github.io/gt-password-generator/)
+
 
 ## Usage 
 
-Upon first visiting the page or following a reload, the user will be asked if their password is 12345. They will subsequently be prompted to create a new password between 8-128 characters. The user can choose to use any combination of lower and upper case letters, numbers, and symbols. After responding to all prompts, the user will click the Generate Password button to create a new password with their selected criteria. The password will then be displayed in a text box. 
+Upon first visiting the page or following a reload, the user will be asked if their password is 12345. 
 
+![Hail Scroob!](Assets/12345.png "Hail Scroob!")
 
+They will subsequently be prompted to create a new password between 8-128 characters.
 
-Screenshots: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Choose length!](Assets/selectLength.png "How long?")
 
+ The user can choose to use any combination of lower and upper case letters, numbers, and symbols.
+ 
+ 
+ ![Choose lowers!](Assets/lowers.png "Lowercase?")
+ ![Choose uppers!](Assets/uppers.png "Uppercase?")
+ ![Choose numbers!](Assets/numbers.png "Numbers?")
+ ![Choose symbols!](Assets/symbols.png "Symbols?")
+
+ 
+ 
+  After responding to all prompts, the user will click the Generate Password button to create a new password with their selected criteria.
+  
+ ![Generate!](Assets/generate.png "What'd you get?")
+  
+  
+   The password will then be displayed in a text box. 
+
+ ![Finished product!](Assets/wholePage.png "Here ya go")
 
 
 ## MIT License
